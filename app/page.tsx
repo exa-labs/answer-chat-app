@@ -220,9 +220,21 @@ export default function Page() {
         } z-40 transition-all duration-300`}>
         <div className={`${
           hasMessages 
-            ? 'w-full md:max-w-4xl mx-auto px-4 md:px-6 py-4' 
+            ? 'w-full md:max-w-4xl mx-auto px-4 md:px-6 py-4 relative' 
             : 'w-full md:max-w-2xl mx-auto px-4 md:px-6'
           }`}>
+          {/* New Chat Button - Only show when there are messages */}
+          {hasMessages && (
+            <div className="absolute -top-8 right-4 md:right-6">
+              <a
+                href="https://demo.exa.ai/answer"
+                target="_blank"
+                className="text-sm text-gray-500 hover:text-[var(--brand-default)] transition-colors duration-200"
+              >
+                New chat ↗
+              </a>
+            </div>
+          )}
           <form onSubmit={handleSubmit} className="relative flex w-full">
             <input
               value={input}

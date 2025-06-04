@@ -149,26 +149,36 @@ export default function Page() {
           >
             <span className="text-sm">Try Exa API</span>
           </a>
-          <a
-            href="https://github.com/exa-labs/answer-chat-app"
-            target="_blank"
-            className="flex items-center gap-1.5 text-md text-gray-600 hover:text-[var(--brand-default)] transition-colors"
-          >
-            <span className="underline">View Source Code</span>
-            <svg
-              className="w-3.5 h-3.5"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
+          <div className="flex items-center gap-4 text-md text-gray-600">
+            <a
+              href="https://exa.ai/demos"
+              target="_blank"
+              className="hover:text-[var(--brand-default)] transition-colors"
             >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-              />
-            </svg>
-          </a>
+              <span className="underline">See More Demos</span>
+            </a>
+            <span className="text-gray-400">|</span>
+            <a
+              href="https://github.com/exa-labs/answer-chat-app"
+              target="_blank"
+              className="flex items-center gap-1.5 hover:text-[var(--brand-default)] transition-colors"
+            >
+              <span className="underline">View Project Code</span>
+              <svg
+                className="w-3.5 h-3.5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                />
+              </svg>
+            </a>
+          </div>
         </div>
       </div>
 
